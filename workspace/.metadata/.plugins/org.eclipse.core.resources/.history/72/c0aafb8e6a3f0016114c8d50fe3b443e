@@ -1,0 +1,24 @@
+package com.example.getit;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.text.LoginFilter.UsernameFilterGeneric;
+import android.widget.EditText;
+
+public class EnrollActActivity extends Activity {
+	 protected void onCreate(Bundle savedInstanceState) {
+	     super.onCreate(savedInstanceState);
+	     setContentView(R.layout.enroll);
+
+	EditText UserID;
+	EditText UserName;
+	EditText PassWord;
+	EditText Password1;
+	UserID=(EditText)findViewById(R.id.aid);
+	UserName=(EditText)findViewById(R.id.aname);
+	PassWord=(EditText)findViewById(R.id.atime);
+	PassWord2=(EditText)findViewById(R.id.apos);
+	
+	 
+	 }
+}

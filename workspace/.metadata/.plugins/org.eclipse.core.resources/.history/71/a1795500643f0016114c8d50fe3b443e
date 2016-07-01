@@ -1,0 +1,12 @@
+package com.showhis;
+
+public class ShowHis extends Activity{
+	
+	 protected void onCreate(Bundle savedInstanceState) {
+	     super.onCreate(savedInstanceState);
+	
+
+		super.setContentView(R.layout.signhistory);
+	}
+
+}

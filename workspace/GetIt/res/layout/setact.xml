@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/backgr">
+
+ <TextView
+     android:id="@+id/actid"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+     android:layout_marginTop="66dp"
+     android:text="会议编号："
+     android:textAppearance="?android:attr/textAppearanceMedium" />
+
+          <TextView
+              android:id="@+id/actpos"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_below="@+id/actname"
+              android:layout_marginTop="19dp"
+              android:text="会议时间"
+              android:textAppearance="?android:attr/textAppearanceMedium" />
+
+          <TextView
+              android:id="@+id/actname"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_below="@+id/actid"
+              android:layout_marginTop="16dp"
+              android:text="会议名称："
+              android:textAppearance="?android:attr/textAppearanceMedium" />
+
+          <EditText
+              android:id="@+id/aid"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBaseline="@+id/actid"
+              android:layout_alignBottom="@+id/actid"
+              android:layout_toRightOf="@+id/actid"
+              android:ems="10" >
+
+              <requestFocus />
+          </EditText>
+
+          <EditText
+              android:id="@+id/aname"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignTop="@+id/actname"
+              android:layout_toRightOf="@+id/actid"
+              android:ems="10" />
+
+          <EditText
+              android:id="@+id/atime"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBaseline="@+id/actpos"
+              android:layout_alignBottom="@+id/actpos"
+              android:layout_alignParentRight="true"
+              android:layout_toRightOf="@+id/actpos"
+              android:ems="10"
+              android:inputType="textPassword" />
+
+          <EditText
+              android:id="@+id/apos"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/atime"
+              android:layout_alignParentRight="true"
+              android:layout_below="@+id/atime"
+              android:layout_marginTop="20dp"
+              android:ems="10"
+              android:inputType="textPassword" />
+
+          <TextView
+              android:id="@+id/acttime"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBaseline="@+id/apos"
+              android:layout_alignBottom="@+id/apos"
+              android:layout_alignParentLeft="true"
+              android:text="会议地点"
+              android:textAppearance="?android:attr/textAppearanceMedium" />
+
+          <Button
+              android:id="@+id/ok"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_below="@+id/apos"
+              android:layout_marginLeft="54dp"
+              android:layout_marginTop="27dp"
+              android:text="OK" />
+
+          <Button
+              android:id="@+id/cancle"
+              style="?android:attr/buttonStyleSmall"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBaseline="@+id/ok"
+              android:layout_alignBottom="@+id/ok"
+              android:layout_marginLeft="51dp"
+              android:layout_toRightOf="@+id/ok"
+              android:text="Cancel" />
+
+</RelativeLayout>
